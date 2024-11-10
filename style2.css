@@ -76,10 +76,10 @@ button:active {
     opacity: 0.8;
 }
 
-button:nth-child(1) { background-color: #FFD700; } /* Yellow */
-button:nth-child(2) { background-color: #FF6347; } /* Red */
-button:nth-child(3) { background-color: #32CD32; } /* Green */
-button:nth-child(4) { background-color: #1E90FF; } /* Blue */
+button:nth-child(1) { background-color: #FFD700; }
+button:nth-child(2) { background-color: #FF6347; }
+button:nth-child(3) { background-color: #32CD32; }
+button:nth-child(4) { background-color: #1E90FF; }
 
 #coordinates-output {
     background-color: rgba(0, 0, 0, 0.4);
