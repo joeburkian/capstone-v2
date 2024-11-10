@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Anomaly Detection with OpenCV</title>
     
-    <!-- OpenCV.js CDN Link -->
+    <!-- Link to OpenCV.js -->
     <script async src="https://docs.opencv.org/4.x/opencv.js" type="text/javascript"></script>
     
-    <!-- Link to CSS and JavaScript files -->
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Link to external JavaScript file -->
     <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Color Anomaly Detection with OpenCV</h1>
 
+    <!-- Upload Section -->
     <div class="upload-section">
         <h3>Upload an Image</h3>
         <input type="file" id="image-input" accept="image/*">
         <button onclick="detectYellowAnomalies()">Detect Yellow Anomalies</button>
     </div>
     
+    <!-- Canvas Container for displaying image and results -->
     <div class="canvas-container">
         <img id="photo" alt="Uploaded Image Preview" style="display:none;">
         <canvas id="canvas"></canvas>
     </div>
 
+    <!-- Results section to display detected coordinates -->
     <div id="results">
         <h3>Detected Coordinates</h3>
         <ul id="coordinates-list"></ul>
