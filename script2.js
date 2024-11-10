@@ -79,4 +79,3 @@ function detectAnomalies(color) {
 }
 
 document.addEventListener("DOMContentLoaded", init);
-
