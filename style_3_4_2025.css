@@ -1,0 +1,106 @@
+body {
+    background-color: #24244a;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 26px;
+    color: #ff2957;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.selector {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+#full-image-processor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#color-picker-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.color-picker {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#color-blender {
+    width: 100%;
+    height: 20px;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+
+input[type="color"] {
+    border: none;
+    background: transparent;
+}
+
+canvas {
+    border: 2px solid white;
+    max-width: 100%;
+    position: relative;
+}
+
+button {
+    background-color: #ff2957;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#yellow-button {
+    background-color: #FFD700; /* Yellow button */
+    color: black;
+}
+
+#coordinates-output {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* 🟢 FIXED TOOLTIP FOR PIXEL COORDINATES 🟢 */
+#canvas-container {
+    position: relative;
+    display: inline-block;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+    pointer-events: none;
+}
+
+
