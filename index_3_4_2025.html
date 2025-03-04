@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Anomaly Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Color Anomaly Detector</h1>
+    <h2>By: EV, Seth, and Joe</h2>
+
+    <div id="full-image-processor">
+        <div class="selector">
+            <h3>Upload Image</h3>
+            <input type="file" id="image-input">
+            <div id="canvas-container">
+                <canvas id="canvas"></canvas>
+                <div id="tooltip">X: 0, Y: 0</div>
+            </div>
+        </div>
+
+        <div class="selector">
+            <h3>Select Hex Color Range</h3>
+            <div id="color-picker-container">
+                <div class="color-picker">
+                    <span>Color One</span>
+                    <input type="color" id="color-one">
+                    <p id="color-one-text">#000000</p>
+                </div>
+                <div class="color-picker">
+                    <span>Color Two</span>
+                    <input type="color" id="color-two">
+                    <p id="color-two-text">#FFFFFF</p>
+                </div>
+            </div>
+
+            <h4>Color Gradient</h4>
+            <div id="color-blender"></div>
+
+            <h4>Sensitivity</h4>
+            <input type="range" min="0" max="100" value="50" id="sensitivity-slider">
+
+            <button id="process-button">Detect Custom Anomalies</button>
+            <button id="yellow-button">Detect Yellow Anomalies</button>
+        </div>
+    </div>
+
+    <div id="coordinates-output">
+        <h3>Detected Anomalies:</h3>
+        <ul id="coordinates-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
