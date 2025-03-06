@@ -1,3 +1,25 @@
+/*
+    Color Anomaly Detector - JavaScript Logic
+
+    This JavaScript file powers the functionality of the Color Anomaly Detector by handling:
+    
+    - Image upload and rendering it on an HTML <canvas>.
+    - Extracting pixel data from the canvas for color analysis.
+    - Converting hex color codes to RGB values for comparison.
+    - Iterating over each pixel to check if its color falls within a user-specified range.
+    - Implementing a sensitivity slider to allow for flexible color matching.
+    - Displaying detected anomalies as a list of (X, Y) coordinates in real-time.
+    - A predefined mode for detecting yellow anomalies.
+    - Updating the color gradient preview dynamically when users change their selected colors.
+    - Displaying a tooltip showing pixel coordinates when hovering over the image.
+
+    The script uses event listeners to trigger image processing and dynamically update the interface 
+    based on user input, ensuring smooth and efficient interaction.
+*/
+
+
+
+
 // This script waits for the HTML document to fully load before running.
 document.addEventListener("DOMContentLoaded", function () {
     // Get references to the HTML elements needed for interaction
