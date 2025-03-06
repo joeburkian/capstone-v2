@@ -1,56 +1,78 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Anomaly Detector</title>
+    <!-- Metadata for character encoding and viewport settings -->
+    <meta charset="UTF-8"> <!-- Ensures proper display of special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on different screen sizes -->
+
+    <title>Color Anomaly Detector</title> <!-- Title of the web page -->
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Main heading of the webpage -->
     <h1>Color Anomaly Detector</h1>
-    <h2>By: EV, Seth, and Joe</h2>
+    <h2>By: EV, Seth, and Joe</h2> <!-- Subheading for team credits -->
 
+    <!-- Main container for the image processing feature -->
     <div id="full-image-processor">
+        
+        <!-- Section for uploading an image -->
         <div class="selector">
-            <h3>Upload Image</h3>
-            <input type="file" id="image-input">
+            <h3>Upload Image</h3> <!-- Title for image upload section -->
+            <input type="file" id="image-input"> <!-- File input to upload an image -->
+
+            <!-- Container to hold the image canvas -->
             <div id="canvas-container">
-                <canvas id="canvas"></canvas>
-                <div id="tooltip">X: 0, Y: 0</div>
+                <canvas id="canvas"></canvas> <!-- Canvas element where the image will be displayed -->
+                <div id="tooltip">X: 0, Y: 0</div> <!-- Tooltip to show mouse position on the canvas -->
             </div>
         </div>
 
+        <!-- Section for selecting color range -->
         <div class="selector">
-            <h3>Select Hex Color Range</h3>
+            <h3>Select Hex Color Range</h3> <!-- Title for color selection section -->
+
+            <!-- Container for two color pickers -->
             <div id="color-picker-container">
                 <div class="color-picker">
-                    <span>Color One</span>
-                    <input type="color" id="color-one">
-                    <p id="color-one-text">#000000</p>
+                    <span>Color One</span> <!-- Label for first color picker -->
+                    <input type="color" id="color-one"> <!-- First color picker input -->
+                    <p id="color-one-text">#000000</p> <!-- Displays selected color value -->
                 </div>
+
                 <div class="color-picker">
-                    <span>Color Two</span>
-                    <input type="color" id="color-two">
-                    <p id="color-two-text">#FFFFFF</p>
+                    <span>Color Two</span> <!-- Label for second color picker -->
+                    <input type="color" id="color-two"> <!-- Second color picker input -->
+                    <p id="color-two-text">#FFFFFF</p> <!-- Displays selected color value -->
                 </div>
             </div>
 
+            <!-- Color blending visualization -->
             <h4>Color Gradient</h4>
-            <div id="color-blender"></div>
+            <div id="color-blender"></div> <!-- A visual representation of color blending -->
 
+            <!-- Slider for adjusting sensitivity -->
             <h4>Sensitivity</h4>
-            <input type="range" min="0" max="100" value="50" id="sensitivity-slider">
+            <input type="range" min="0" max="100" value="50" id="sensitivity-slider"> 
+            <!-- A range slider to adjust the sensitivity of color anomaly detection -->
 
-            <button id="process-button">Detect Custom Anomalies</button>
-            <button id="yellow-button">Detect Yellow Anomalies</button>
+            <!-- Buttons to trigger anomaly detection -->
+            <button id="process-button">Detect Custom Anomalies</button> <!-- Detect anomalies based on selected colors -->
+            <button id="yellow-button">Detect Yellow Anomalies</button> <!-- Predefined button for detecting yellow anomalies -->
         </div>
     </div>
 
+    <!-- Section for displaying detected anomaly coordinates -->
     <div id="coordinates-output">
-        <h3>Detected Anomalies:</h3>
-        <ul id="coordinates-list"></ul>
+        <h3>Detected Anomalies:</h3> <!-- Title for detected anomalies -->
+        <ul id="coordinates-list"></ul> <!-- Unordered list where detected anomaly coordinates will be displayed -->
     </div>
 
-    <script src="script.js"></script>
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script> <!-- Includes JavaScript logic for processing the image and detecting anomalies -->
 </body>
 </html>
+
+
