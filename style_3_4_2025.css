@@ -1,3 +1,24 @@
+/* 
+    Color Anomaly Detector - CSS Styling
+
+    This CSS file provides the design and layout for the Color Anomaly Detector, ensuring a visually 
+    appealing and user-friendly interface. Key design choices include:
+    
+    - A dark theme with a deep navy blue background and white text for high contrast.
+    - Flexbox-based layout for responsive and organized element positioning.
+    - Semi-transparent backgrounds for input sections to create a modern, polished aesthetic.
+    - A hover effect for buttons to improve user feedback.
+    - A tooltip system that appears when hovering over the image, displaying pixel coordinates.
+    - A canvas border to clearly define the image area.
+    - A dynamic color gradient preview that updates when users select new colors.
+
+    These styles enhance readability, usability, and responsiveness, ensuring a smooth user experience 
+    across different devices.
+*/
+
+
+
+
 body {
     background-color: #24244a; /* Dark blue background for a modern, tech look */
     font-family: Arial, sans-serif; /* Sets the default font */
