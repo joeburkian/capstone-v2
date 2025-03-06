@@ -1,35 +1,38 @@
 body {
-    background-color: #24244a;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    background-color: #24244a; /* Dark blue background for a modern, tech look */
+    font-family: Arial, sans-serif; /* Sets the default font */
+    color: #ffffff; /* Ensures all text is white for contrast */
+    text-align: center; /* Centers text for readability */
+    margin: 0; /* Removes default browser margins */
+    padding: 0; /* Removes default padding */
 }
 
+
 h1 {
-    font-size: 26px;
-    color: #ff2957;
+    font-size: 26px; /* Slightly large title text */
+    color: #ff2957; /* Bright pinkish-red for emphasis */
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 16px; /* Smaller font for subtitle */
 }
 
+
 .selector {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background for contrast */
+    padding: 15px; /* Adds space inside for better appearance */
+    border-radius: 10px; /* Rounded corners for a smooth look */
+    display: inline-block; /* Makes it adapt to content size */
+    margin: 20px; /* Adds spacing between selectors */
+    text-align: center; /* Ensures text and elements inside remain centered */
 }
 
 #full-image-processor {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    display: flex; /* Enables flexible layout */
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: flex-start; /* Aligns content at the top */
 }
+
 
 #color-picker-container {
     display: flex;
@@ -38,17 +41,19 @@ h2 {
 }
 
 .color-picker {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 10px; /* Adds spacing inside */
+    border-radius: 8px; /* Smooths edges */
 }
 
+
 #color-blender {
-    width: 100%;
-    height: 20px;
-    border: 1px solid white;
-    margin: 10px 0;
+    width: 100%; /* Ensures full width */
+    height: 20px; /* Thin gradient bar */
+    border: 1px solid white; /* White border for contrast */
+    margin: 10px 0; /* Spacing above and below */
 }
+
 
 input[type="color"] {
     border: none;
@@ -56,51 +61,54 @@ input[type="color"] {
 }
 
 canvas {
-    border: 2px solid white;
-    max-width: 100%;
-    position: relative;
+    border: 2px solid white; /* White border to highlight image area */
+    max-width: 100%; /* Ensures responsiveness */
+    position: relative; /* Needed for absolute positioning of elements inside */
 }
 
+
 button {
-    background-color: #ff2957;
-    border: none;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: #ff2957; /* Bright red/pink for visibility */
+    border: none; /* Removes default border */
+    padding: 10px; /* Comfortable click area */
+    color: white; /* White text for contrast */
+    border-radius: 5px; /* Smooth corners */
+    cursor: pointer; /* Shows pointer to indicate it's clickable */
+    margin-top: 10px; /* Adds space above */
 }
 
 button:hover {
     opacity: 0.8;
 }
 
-#yellow-button {
-    background-color: #FFD700; /* Yellow button */
-    color: black;
+button:hover {
+    opacity: 0.8; /* Makes button slightly transparent on hover */
 }
+
 
 #coordinates-output {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
+    margin-top: 20px; /* Adds spacing above */
+    text-align: center; /* Aligns text centrally */
+    font-size: 14px; /* Readable size */
 }
 
-/* 🟢 FIXED TOOLTIP FOR PIXEL COORDINATES 🟢 */
+
 #canvas-container {
-    position: relative;
-    display: inline-block;
+    position: relative; /* Enables absolute positioning of child elements */
+    display: inline-block; /* Ensures it stays aligned properly */
 }
+
 
 #tooltip {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    display: none;
-    pointer-events: none;
+    position: absolute; /* Allows movement with the cursor */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for readability */
+    color: white; /* White text */
+    padding: 5px; /* Adds spacing inside */
+    border-radius: 5px; /* Rounded edges */
+    font-size: 12px; /* Keeps text readable but small */
+    display: none; /* Hidden by default */
+    pointer-events: none; /* Prevents interfering with mouse actions */
 }
+
 
 
